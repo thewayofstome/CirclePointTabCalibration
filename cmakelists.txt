@@ -1,5 +1,15 @@
 cmake_minimum_required(VERSION 3.20)
 
-project(CirclePointCalibration)
+if(NOT DEFINED CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Release)
+endif()
+project(circle_point_calibration)
+
+set(CMAKE_CXX_STANDARD 17)
+
+include_directories(${PROJECT_SOURCE_DIR})
+
+set(OpenCV_DIR "F:\\opencv\\490\\build\\install")
+find_package(OpenCV REQUIRED)
 add_subdirectory(src)
 

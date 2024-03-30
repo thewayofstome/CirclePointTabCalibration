@@ -1,7 +1,7 @@
 #include <iostream>
-
-int main() 
+#include "opencv2/opencv.hpp"
+int main()
 {
     std::cout << "Hello, World!" << std::endl;
-    std::cin.get();
+    return 0;
 }
